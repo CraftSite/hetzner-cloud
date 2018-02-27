@@ -12,7 +12,6 @@ function h_core(key){
   this.key=key;
 
   this.load=function(url){
-    console.log("yea")
     this.ajax=new ajax();
     this.request=this.ajax.open("https://api.hetzner.cloud/v1/"+url, "GET");
     if(!this.request){
